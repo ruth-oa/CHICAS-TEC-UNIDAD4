@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 
 export default function Layout() {
   return (
-    <div className="min-h-screen grid grid-cols-12 bg-gradient-to-b from-pink-100 via-white to-blue-100">
+    <div className="min-h-screen w-screen overflow-x-hidden grid grid-cols-12 bg-gradient-to-b from-pink-100 via-white to-blue-100 m-0 p-0">
       {/* Columna izquierda */}
-      <aside className="hidden md:block col-span-2 bg-pink-200 border-r-4 border-pink-500 p-4 flex flex-col justify-between">
+      <aside className="hidden md:block md:col-span-2 bg-pink-200 border-r-4 border-pink-500 p-4 flex flex-col justify-between">
         <div>
           <h2 className="text-pink-700 font-bold text-xl">♡ Links ♡</h2>
           <ul className="mt-4 space-y-2 text-pink-800 font-medium">
@@ -31,7 +31,7 @@ export default function Layout() {
       </main>
 
       {/* Columna derecha */}
-      <aside className="hidden md:block col-span-2 bg-blue-200 border-l-4 border-blue-400 p-4 flex flex-col items-center">
+      <aside className="hidden md:block md:col-span-2 bg-blue-200 border-l-4 border-blue-400 p-4 flex flex-col items-center">
         <h2 className="text-blue-700 font-bold text-xl mb-4">☆ Extras ☆</h2>
         <img
           src="https://media.tenor.com/B7yB9kHh_0IAAAAj/hatsune-miku-miku.gif"
@@ -39,7 +39,7 @@ export default function Layout() {
           className="w-32 h-32 rounded-lg border-2 border-blue-300 shadow-md"
         />
         <p className="mt-4 text-blue-800 text-sm font-medium">
-          ¡Bienvenida a mi rincón kawaii!
+          ¡waaaa!
         </p>
       </aside>
     </div>

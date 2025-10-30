@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -21,5 +22,6 @@ const app = initializeApp(firebaseConfig);
 //Inicializar servicio de Firestore
 export const db = getFirestore(app)
 export const auth = getAuth(app); // 👈 exportar Auth
+export const storage = getStorage(app); 
 
 // volver a tu proyecyo en firebase y volver a crear tu archivo env. Lo del env local y firebase js es para que no se suban todos tus datos, y en lugar de eso, solo uses variables

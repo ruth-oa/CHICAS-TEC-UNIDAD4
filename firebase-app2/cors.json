@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["http://localhost:*", "https://auth-e61e5.web.app"],
+    "method": ["GET", "POST", "PUT", "HEAD"],
+    "maxAgeSeconds": 3600
+  }
+]
