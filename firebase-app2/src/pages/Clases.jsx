@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Posts from "./Posts";
 import { Usuario } from "./Usuario";
+import { Productos } from "./Productos";
 
 export default function Clases() {
   const [seccionActiva, setSeccionActiva] = useState("posts"); // "posts" o "usuarios"
@@ -24,12 +25,21 @@ export default function Clases() {
         >
           Usuarios
         </button>
+
+        <button
+          className={`px-4 py-2 rounded ${seccionActiva === "usuarios" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+          onClick={() => setSeccionActiva("productos")}
+        >
+          Productos
+        </button>
+
       </div>
 
       {/* Contenido de la sección activa */}
       <div className="bg-white p-4 rounded shadow">
         {seccionActiva === "posts" && <Posts />}
         {seccionActiva === "usuarios" && <Usuario />}
+        {seccionActiva === "productos" && <Productos />}
       </div>
     </div>
   );

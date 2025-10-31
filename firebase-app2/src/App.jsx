@@ -5,6 +5,7 @@ import Clases from "./pages/Clases";
 import Foro from "./pages/Foro";
 import Perfil from "./pages/Perfil";
 import PerfilesGlobal from "./pages/PerfilesGlobal"; // 🔹 NUEVO
+import { Productos } from "./pages/Productos";
 
 function App() {
   return (
